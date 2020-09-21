@@ -1,0 +1,59 @@
+#canvas-div {
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    margin-top: 10vh;
+  }
+    
+  .slide-container {
+    margin: auto;
+    width: 80%;
+  }
+  
+  .play-btn {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .slider {
+    margin: auto;
+    width: calc(100% - 140px);
+    height: 15px;
+    border-radius: 5px; 
+    appearance: none;
+    background: #d3d3d3; /* Grey background */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    transition: opacity .2s;
+    cursor: pointer;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #e20074;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.25s ease;
+  }
+  
+  .slider::-webkit-slider-thumb:hover {
+    opacity: 1;
+  }
+  
+  .date {
+    margin-left: 10px;
+    white-space: nowrap;
+  }
+  
+  .slider:focus {
+    outline: none;
+  }
+
+  .bubble:hover {
+      opacity: 0.6;
+  }

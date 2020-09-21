@@ -10,11 +10,11 @@ import store from "./code/store/store";
 ReactDOM.render(
     <React.StrictMode>
         <Provider store={store}>
-            <BrowserRouter basename={getBaseName()}>
-                <Switch>
+            {/* <BrowserRouter basename={getBaseName()}>
+                <Switch> */}
                     <App />
-                </Switch>
-            </BrowserRouter>
+                {/* </Switch>
+            </BrowserRouter> */}
         </Provider>
     </React.StrictMode>,
     document.getElementById('root')
@@ -26,11 +26,5 @@ ReactDOM.render(
 serviceWorker.unregister();
 
 function getBaseName() {
-    if (window.location.origin.match("localhost")) {
-        return "/";
-    } else if (window.location.origin.match("quantum-stage")) {
-        return "/cex";
-    } else {
-        return "/";
-    }
+    return "/";
 }
